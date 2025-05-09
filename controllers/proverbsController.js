@@ -1,5 +1,5 @@
 const model = require('../models/proverbModel');
-const pool = require('../db'); // برای query مستقیم
+const pool = require('../db'); 
 
 // CRUD functions using model
 exports.getAll = async (req, res) => {

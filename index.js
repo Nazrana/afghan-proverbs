@@ -1,12 +1,12 @@
 const express = require('express');
 require('dotenv').config();
-const cors = require('cors'); // ← اضافه کن
+const cors = require('cors'); 
 
 const app = express();
 const proverbsRoutes = require('./routes/proverbs');
 
 // Middleware
-app.use(cors()); // ← اضافه کن
+app.use(cors()); 
 app.use(express.json());
 
 // Routes
