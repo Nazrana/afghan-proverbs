@@ -5,6 +5,10 @@ const cors = require('cors');
 const app = express();
 const proverbsRoutes = require('./routes/proverbs');
 
+app.get('/', (req, res) => {
+    res.send('Server is running...');
+  })
+
 // Middleware
 app.use(cors()); 
 app.use(express.json());
